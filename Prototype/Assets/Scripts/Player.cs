@@ -24,8 +24,8 @@ public class Player : MonoBehaviour {
 
 		inputVector = new Vector3(xVel, 0, yVel);
 
-		print("X_Vel: "+ xVel);
-		print("z_Vel: "+ yVel);
+		//print("X_Vel: "+ xVel);
+		//print("z_Vel: "+ yVel);
 
 		if (xVel != 0 || yVel != 0)
 		{
