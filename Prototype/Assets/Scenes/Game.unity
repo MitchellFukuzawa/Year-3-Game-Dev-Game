@@ -592,7 +592,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4123313742282378, guid: 6937e222beae01241b418ff3da70a355, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.61
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4123313742282378, guid: 6937e222beae01241b418ff3da70a355, type: 2}
       propertyPath: m_LocalPosition.z
@@ -620,28 +620,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114205425415145638, guid: 6937e222beae01241b418ff3da70a355,
         type: 2}
-      propertyPath: H_LS_PNum
-      value: H_LStick1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114205425415145638, guid: 6937e222beae01241b418ff3da70a355,
-        type: 2}
-      propertyPath: V_LS_PNum
-      value: V_LStick1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114205425415145638, guid: 6937e222beae01241b418ff3da70a355,
-        type: 2}
-      propertyPath: H_RS_PNum
-      value: H_RStick1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114205425415145638, guid: 6937e222beae01241b418ff3da70a355,
-        type: 2}
       propertyPath: V_RS_PNum
       value: V_RStick1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6937e222beae01241b418ff3da70a355, type: 2}
   m_IsPrefabAsset: 0
---- !u!1001 &1731000670
+--- !u!1001 &1822201128
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -654,7 +639,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4123313742282378, guid: 6937e222beae01241b418ff3da70a355, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.61
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4123313742282378, guid: 6937e222beae01241b418ff3da70a355, type: 2}
       propertyPath: m_LocalPosition.z

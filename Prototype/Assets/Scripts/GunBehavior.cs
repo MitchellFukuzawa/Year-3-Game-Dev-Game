@@ -50,16 +50,17 @@ public class GunBehavior : MonoBehaviour
 
     void Update()
     {
-        if ((Input.GetMouseButtonDown(0)) || (Input.GetKeyDown(KeyCode.Joystick1Button5)))
+        if (Input.GetAxisRaw("RT1") > 0.5)
         {
             isShooting = true;
         }
-        if ((Input.GetMouseButtonUp(0)) || (Input.GetKeyUp(KeyCode.Joystick1Button5)))
+        else
         {
             isShooting = false;
 
             // Play shot smoke particles
         }
+        //print("RT = " + Input.GetAxisRaw("RT1"));
 
         if ((isShooting) && (t_RateOfFireTimer >= RateOfFire) && (BulletsInMag > 0))
         {

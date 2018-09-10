@@ -418,7 +418,7 @@ MonoBehaviour:
   m_HorizontalAxis: H_LStick
   m_VerticalAxis: V_LStick
   m_SubmitButton: Submit
-  m_CancelButton: Cancel
+  m_CancelButton: BButton
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 737890217}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1481733761
