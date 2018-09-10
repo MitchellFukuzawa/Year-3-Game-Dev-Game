@@ -623,6 +623,21 @@ Prefab:
       propertyPath: V_RS_PNum
       value: V_RStick1
       objectReference: {fileID: 0}
+    - target: {fileID: 23153796015238736, guid: 6937e222beae01241b418ff3da70a355,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376481256893292, guid: 6937e222beae01241b418ff3da70a355,
+        type: 2}
+      propertyPath: RT_PNum
+      value: RT1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376481256893292, guid: 6937e222beae01241b418ff3da70a355,
+        type: 2}
+      propertyPath: xButton_PNum
+      value: XButton1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6937e222beae01241b418ff3da70a355, type: 2}
   m_IsPrefabAsset: 0
@@ -688,6 +703,16 @@ Prefab:
         type: 2}
       propertyPath: V_RS_PNum
       value: V_RStick2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376481256893292, guid: 6937e222beae01241b418ff3da70a355,
+        type: 2}
+      propertyPath: RT_PNum
+      value: RT2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376481256893292, guid: 6937e222beae01241b418ff3da70a355,
+        type: 2}
+      propertyPath: xButton_PNum
+      value: XButton2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6937e222beae01241b418ff3da70a355, type: 2}

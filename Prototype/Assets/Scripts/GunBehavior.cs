@@ -34,6 +34,9 @@ public class GunBehavior : MonoBehaviour
     bool requestReload = false;
     public float t_Reload = 0;
 
+    public string RT_PNum;
+    public string xButton_PNum;
+
     void Start()
     {
         player = GameObject.Find("Player");
@@ -50,7 +53,7 @@ public class GunBehavior : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetAxisRaw("RT1") > 0.5)
+        if (Input.GetAxisRaw(RT_PNum) > 0.5)
         {
             isShooting = true;
         }
@@ -60,7 +63,6 @@ public class GunBehavior : MonoBehaviour
 
             // Play shot smoke particles
         }
-        //print("RT = " + Input.GetAxisRaw("RT1"));
 
         if ((isShooting) && (t_RateOfFireTimer >= RateOfFire) && (BulletsInMag > 0))
         {
@@ -85,7 +87,7 @@ public class GunBehavior : MonoBehaviour
             }
         }
 
-        if ((((Input.GetKeyDown(KeyCode.R)) || (Input.GetKeyDown(KeyCode.Joystick1Button2)))) && (!requestReload))
+        if ((Input.GetButtonDown(xButton_PNum)) && (!requestReload))
         {
             // Play Reload Sound
             // Also play a reload graphic on screen
