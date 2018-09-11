@@ -37,6 +37,8 @@ public class GunBehavior : MonoBehaviour
     public string RT_PNum;
     public string xButton_PNum;
 
+    private string tempReloading_Str;
+
     void Start()
     {
         player = GameObject.Find("Player");
@@ -91,7 +93,8 @@ public class GunBehavior : MonoBehaviour
         {
             // Play Reload Sound
             // Also play a reload graphic on screen
-
+            tempReloading_Str = xButton_PNum;
+            print("This: " + tempReloading_Str);
             requestReload = true;
         }
 
@@ -101,6 +104,7 @@ public class GunBehavior : MonoBehaviour
 
             if(t_Reload > TimeToReload)
             {
+                print("Reloaded GM: " + gameObject.transform.parent.gameObject.name);
                 BulletsInMag = MagazineCapacity;
                 requestReload = false;
                 t_Reload = 0;

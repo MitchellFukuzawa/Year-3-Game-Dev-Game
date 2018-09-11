@@ -43,7 +43,9 @@
 			{
 				fixed4 col = tex2D(_MainTex, i.uv);
 				// just invert the colors
-				col.rgb = sin(col * _Time);
+			fixed4 col1 = clamp(0,1,sin(cos(sin(col)*_Time) * sin(_Time)));
+
+				col.rgb = col1 * col1 / col *2;
 				return col;
 			}
 			ENDCG
