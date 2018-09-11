@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -482,6 +482,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d43532c9a21b7f045a3089069145b906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1417814882 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1690553077726120, guid: 6937e222beae01241b418ff3da70a355,
+    type: 2}
+  m_PrefabInternal: {fileID: 1822201128}
+--- !u!114 &1417814887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1417814882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1ac9b495faf8949a093ffa11f8f6ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1658642345
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +654,30 @@ Prefab:
       propertyPath: xButton_PNum
       value: XButton1
       objectReference: {fileID: 0}
+    - target: {fileID: 1690553077726120, guid: 6937e222beae01241b418ff3da70a355, type: 2}
+      propertyPath: m_Name
+      value: Player Parent 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376481256893292, guid: 6937e222beae01241b418ff3da70a355,
+        type: 2}
+      propertyPath: t_RateOfFireTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376481256893292, guid: 6937e222beae01241b418ff3da70a355,
+        type: 2}
+      propertyPath: RateOfFire
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376481256893292, guid: 6937e222beae01241b418ff3da70a355,
+        type: 2}
+      propertyPath: Recoil
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376481256893292, guid: 6937e222beae01241b418ff3da70a355,
+        type: 2}
+      propertyPath: BulletsInMag
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6937e222beae01241b418ff3da70a355, type: 2}
   m_IsPrefabAsset: 0
@@ -682,7 +722,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1690553077726120, guid: 6937e222beae01241b418ff3da70a355, type: 2}
       propertyPath: m_Name
-      value: Player Parent (1)
+      value: Player Parent 2
       objectReference: {fileID: 0}
     - target: {fileID: 114205425415145638, guid: 6937e222beae01241b418ff3da70a355,
         type: 2}
@@ -717,6 +757,22 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6937e222beae01241b418ff3da70a355, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1854359600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1690553077726120, guid: 6937e222beae01241b418ff3da70a355,
+    type: 2}
+  m_PrefabInternal: {fileID: 1662097181}
+--- !u!114 &1854359605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1854359600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1ac9b495faf8949a093ffa11f8f6ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1900803482
 GameObject:
   m_ObjectHideFlags: 0

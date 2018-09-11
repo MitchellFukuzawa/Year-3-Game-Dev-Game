@@ -78,7 +78,7 @@ public class GunBehavior : MonoBehaviour
                     Bullets[i].transform.position = Emitter.position;
                     // Recoil
                     float randomAngle = Random.Range(Recoil, -Recoil);
-                    Bullets[i].transform.eulerAngles = player.transform.eulerAngles - new Vector3(0, randomAngle, 0);
+                    Bullets[i].transform.eulerAngles = gameObject.transform.parent.transform.eulerAngles - new Vector3(0, randomAngle, 0);
                     BulletsInMag--;
 
                     t_RateOfFireTimer = 0; // Reset ROF timer
@@ -95,7 +95,7 @@ public class GunBehavior : MonoBehaviour
             requestReload = true;
         }
 
-        if (requestReload)
+        if ((requestReload))
         {
             t_Reload += Time.deltaTime;
 
