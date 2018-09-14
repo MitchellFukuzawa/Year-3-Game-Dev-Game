@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class Player : MonoBehaviour {
 	private float xVel;
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour {
 	public float speed;
 	public string H_LS_PNum, V_LS_PNum, H_RS_PNum, V_RS_PNum;
 
+
 	// Use this for initialization
 	void Start () {
 		
@@ -20,6 +22,7 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+        
 		xVel = Input.GetAxis(H_LS_PNum);
 		yVel = Input.GetAxis(V_LS_PNum);
 

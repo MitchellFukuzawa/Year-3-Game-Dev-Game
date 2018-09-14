@@ -244,12 +244,14 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.001
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 825543829}
+  m_PlayerPrefab: {fileID: 1825686681582040, guid: 9b523720f59734b41949517104daf623,
+    type: 2}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
   m_OfflineScene: Game Multiplayer
   m_OnlineScene: Game Multiplayer
-  m_SpawnPrefabs: []
+  m_SpawnPrefabs:
+  - {fileID: 1034472881636776, guid: 18ecf51b64e500049b0383b78c42d0b5, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -522,11 +524,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: c1fe885d4e513c14d9b66127cd5650ea, type: 2}
---- !u!1 &825543829 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1825686681582040, guid: 8f0b524c94a7c2e43b02058bc2aa8862,
-    type: 2}
-  m_PrefabInternal: {fileID: 1662097181}
 --- !u!1 &1041831877
 GameObject:
   m_ObjectHideFlags: 0
