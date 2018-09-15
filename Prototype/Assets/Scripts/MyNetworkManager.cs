@@ -46,7 +46,7 @@ public class MyNetworkManager : NetworkManager
         playerChildGunBehavior.RT_PNum = "RT" + i.ToString();
         playerChildGunBehavior.xButton_PNum = "XButton" + i.ToString();
         player.SetActive(true);
-
+        print("<color=red>i:" + i + "</color>");
         i++;
     }
 }

@@ -267,7 +267,7 @@ MonoBehaviour:
   m_MovementTheshold: 0.001
   m_VelocityThreshold: 0.0001
   m_SnapThreshold: 5
-  m_InterpolateRotation: 1
+  m_InterpolateRotation: 0.01
   m_InterpolateMovement: 1
 --- !u!114 &114549656463091772
 MonoBehaviour:
@@ -285,6 +285,8 @@ MonoBehaviour:
   V_LS_PNum: 
   H_RS_PNum: 
   V_RS_PNum: 
+  defaultMat: {fileID: 2100000, guid: 93345847a126b3e49abe790ed51e0883, type: 2}
+  authorityMat: {fileID: 2100000, guid: b8646da2284e108489d28c4773d00228, type: 2}
 --- !u!114 &114908938173026644
 MonoBehaviour:
   m_ObjectHideFlags: 1
