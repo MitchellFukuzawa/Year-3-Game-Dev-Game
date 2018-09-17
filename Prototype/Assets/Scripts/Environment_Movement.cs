@@ -10,27 +10,28 @@ public class Environment_Movement : MonoBehaviour {
      * 
      */
 
-    public List<Transform> objectPositions;
     public KeyCode activationButton;
     public float Speed = .1f;
-    private Transform startPosition;
+    public bool finishAtStartPos = false;
+    public List<Transform> objectPositions;
     //public IEnumerable movementMode;      // For later use to implement a different lerp method
 
+    private Transform startPos;
     private Rigidbody rb;
     private bool start = false;
     public int pos = 0;
-    public float t_lerp = 0;
-    public bool add = true;        // For lerping up to list.count and back to 0
+    private float t_lerp = 0;
+    private bool add = true;        // For lerping up to list.count and back to 0
 
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
-        startPosition = gameObject.transform;
+        startPos = gameObject.transform;
     }
 
     void FixedUpdate ()
     {
-        // Will have to change to suite Makee Makee for now key board events
+        // Will have to change to suite Makee Makee, for now key board events
         if (Input.GetKeyDown(activationButton))
         {
             start = true;
@@ -57,14 +58,24 @@ public class Environment_Movement : MonoBehaviour {
                     t_lerp = 0;
                     pos++;
                 }
-                else{
+                else
+                {
                     t_lerp = 0;
                     pos--;
                 }
             }
 
-            if(pos == objectPositions.Count)
+            if (pos == objectPositions.Count)
+            {
                 start = false;
+                pos = 0;
+            }
         }
-	}
+        else
+        {
+            gameObject.transform.position = startPos.position;
+            gameObject.transform.rotation = startPos.rotation;
+        }
+
+    }
 }

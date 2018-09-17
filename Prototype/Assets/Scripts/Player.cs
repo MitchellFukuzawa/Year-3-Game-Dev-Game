@@ -38,8 +38,11 @@ public class Player : MonoBehaviour {
 		Vector3 playerDirection = Vector3.right * Input.GetAxisRaw(H_RS_PNum) + Vector3.forward * -Input.GetAxisRaw(V_RS_PNum);
 		if(playerDirection.sqrMagnitude > 0.0f)
 		{
-			transform.rotation = Quaternion.LookRotation(playerDirection, Vector3.up);
-		}
+            //playerDirection.z += 45;
+			transform.rotation = Quaternion.LookRotation(playerDirection, Vector3.up) ;
+            transform.rotation = Quaternion.Euler(0, 45 + transform.rotation.eulerAngles.y, 0);
+
+        }
 
 
 	}
