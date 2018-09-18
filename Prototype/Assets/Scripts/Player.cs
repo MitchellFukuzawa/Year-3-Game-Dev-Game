@@ -33,7 +33,7 @@ public class Player : MonoBehaviour {
 			GetComponent<Rigidbody>().AddForce(inputVector.normalized * speed);
 		}
 
-		GetComponent<Rigidbody>().velocity = new Vector3 (speed * xVel, 0f, speed * yVel);
+		GetComponent<Rigidbody>().velocity = new Vector3 (speed * xVel, -9.8f, speed * yVel);
 
 		Vector3 playerDirection = Vector3.right * Input.GetAxisRaw(H_RS_PNum) + Vector3.forward * -Input.GetAxisRaw(V_RS_PNum);
 		if(playerDirection.sqrMagnitude > 0.0f)
