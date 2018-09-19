@@ -12,10 +12,11 @@ public class Player : MonoBehaviour {
 	public float speed;
 	public string H_LS_PNum, V_LS_PNum, H_RS_PNum, V_RS_PNum;
 
+
 	// Use this for initialization
 	void Start () {
-		
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update ()

@@ -49,6 +49,9 @@ public class GunBehavior : MonoBehaviour
             GameObject myInstance = Instantiate<GameObject>(Prefab_Bullet);
             myInstance.SetActive(false);
             Bullets.Add(myInstance);
+            myInstance.GetComponent<Bullet>().Damage = Damage;
+            myInstance.GetComponent<Bullet>().ID = RT_PNum.Substring(RT_PNum.Length-1);
+
         }
     }
 

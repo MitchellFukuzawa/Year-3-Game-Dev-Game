@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour {
 
+    public string ID;
 	public float speed;
+
+    //[HideInInspector]
+    public float Damage;
 
 	// Use this for initialization
 	void Start () {
@@ -16,3 +20,4 @@ public class Bullet : MonoBehaviour {
 		transform.Translate(Vector3.forward * speed * Time.deltaTime);
 	}
 }
+
